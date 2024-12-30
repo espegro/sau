@@ -14,7 +14,7 @@ install: $(LIB_NAME)
 	@echo "Installing $(LIB_NAME) to $(INSTALL_DIR)"
 	mkdir -p $(INSTALL_DIR)
 	cp $(LIB_NAME) $(INSTALL_DIR)/
-	chmod 750 $(INSTALL_DIR)/$(LIB_NAME)
+	chmod 755 $(INSTALL_DIR)/$(LIB_NAME)
 	chown root:root $(INSTALL_DIR)/$(LIB_NAME)
 	@echo "Creating SSHD override file: $(SSHD_OVERRIDE)"
 	mkdir -p $(dir $(SSHD_OVERRIDE))
